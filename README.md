@@ -23,13 +23,18 @@ The **ERP Website** is a comprehensive Enterprise Resource Planning (ERP) system
 ## 📂 Project Structure  
 ```
 ERP-Website/
-│-- frontend/       # React.js frontend code
-│-- backend/        # Express.js backend code
-│-- database/       # MongoDB models and configurations
-│-- public/         # Static assets
-│-- .env.example    # Example environment variables
-│-- package.json    # Dependencies and scripts
-│-- README.md       # Project documentation
+├── config/             # Configuration files (e.g., database, environment)
+├── controllers/        # Route handler functions
+├── models/             # Mongoose schemas and models
+├── public/             # Static assets (e.g., CSS, JS, images)
+├── views/              # EJS templates for rendering frontend pages
+├── app.js              # Entry point for the Express.js application
+├── createAdmin.js      # Script to create an admin user
+├── createFaculty.js    # Script to create a faculty user
+├── createStudent.js    # Script to create a student user
+├── .env.example        # Example environment variables
+├── package.json        # Project metadata and dependencies
+└── README.md           # Project documentation
 ```  
 
 ## 🚀 Getting Started  
@@ -49,16 +54,8 @@ cd ERP-Website
 
 #### Backend Setup  
 ```sh
-cd backend
 npm install
 npm run dev  # Starts backend server
-```  
-
-#### Frontend Setup  
-```sh
-cd frontend
-npm install
-npm start  # Runs frontend on localhost:3000
 ```  
 
 ### 🔑 Environment Variables  
